@@ -1,0 +1,45 @@
+package com.aricionur.spring.annotationBased;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SchoolServiceImpl implements SchoolService {
+
+	private SchoolRepo schoolRepo;
+	private StudentRepo studentRepo;
+	
+	@Autowired
+	private StudentRepo studentRepoTwo;
+	
+	private StudentRepo studentRepoThree;
+	
+	public SchoolServiceImpl() {
+		
+	}
+	
+	@Autowired
+	public SchoolServiceImpl(SchoolRepo schoolRepo, StudentRepo studentRepo) {
+		super();
+		this.schoolRepo = schoolRepo;
+		this.studentRepo = studentRepo;
+	}
+	
+	@Autowired
+	public void injectStudentRepo(StudentRepo studentRepoThree) {
+		this.studentRepoThree = studentRepoThree;
+	}
+	
+	@Override
+	public void doRunning() {
+		System.out.println("SchoolServiceImpl is running..");
+		schoolRepo.doRunning();
+		studentRepo.doRunning();
+		studentRepoTwo.doRunning();
+		studentRepoThree.doRunning();
+
+	}
+}

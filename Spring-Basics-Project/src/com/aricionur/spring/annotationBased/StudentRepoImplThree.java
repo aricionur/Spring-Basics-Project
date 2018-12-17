@@ -1,0 +1,15 @@
+package com.aricionur.spring.annotationBased;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("StudentRepoImplThree")
+public class StudentRepoImplThree implements StudentRepo {
+
+	@Override
+	public void doRunning() {
+		System.out.println("StudentRepoImplThree is running..");
+	}
+
+}
