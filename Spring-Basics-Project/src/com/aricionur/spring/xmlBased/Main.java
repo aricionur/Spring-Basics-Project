@@ -1,0 +1,15 @@
+package com.aricionur.spring.xmlBased;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("XmlConfiguration.xml");
+		SchoolService schoolService = context.getBean("schoolService", SchoolService.class);
+		schoolService.doRunning();
+	
+	}
+}
