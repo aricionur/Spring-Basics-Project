@@ -1,0 +1,14 @@
+package com.aricionur.spring.javaBased;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SpringJavaConfiguration {
+
+	public SpringJavaConfiguration() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+}

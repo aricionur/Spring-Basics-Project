@@ -1,0 +1,21 @@
+package com.aricionur.spring.javaBased;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new AnnotationConfigApplicationContext(SpringJavaConfiguration.class);
+		SchoolService schoolService = context.getBean(SchoolService.class);
+		schoolService.doRunning();
+		
+		StudentRepo studentRepo = context.getBean(StudentRepo.class);
+		studentRepo.doRunning();
+		
+		SchoolRepo schoolRepo = context.getBean(SchoolRepo.class);
+		schoolRepo.doRunning();
+		
+	}
+}

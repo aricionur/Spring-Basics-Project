@@ -1,0 +1,6 @@
+package com.aricionur.spring.javaBased;
+
+@Configuration
+public class SpringJavaConfiguration {
+
+}
