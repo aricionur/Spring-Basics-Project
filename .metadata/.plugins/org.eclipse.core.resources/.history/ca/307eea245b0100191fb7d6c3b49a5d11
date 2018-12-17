@@ -1,0 +1,12 @@
+package com.aricionur.spring.xmlBased;
+
+public class StudentEntity {
+
+	String name;
+	String surname;
+	
+	public StudentEntity(String name, String surname) {
+		this.name = name;
+		this.surname = surname;
+	}
+}

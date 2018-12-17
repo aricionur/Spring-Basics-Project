@@ -1,0 +1,6 @@
+package com.aricionur.spring.hello;
+
+@Componenet
+public class MessageManager {
+
+}

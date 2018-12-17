@@ -1,0 +1,7 @@
+package com.aricionur.spring.annotation_xml;
+
+public class RepoService {
+
+	RepoOne repoOne;
+	RepoTwo repoTwo;
+}

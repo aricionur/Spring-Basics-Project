@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.aricionur.springxml.RentalService"/>
+<fullyQualifiedTypeName name="com.aricionur.springxml.CustomerRepository"/>
+<fullyQualifiedTypeName name="com.aricionur.springxml.RentalRepositoryImpl"/>
+<fullyQualifiedTypeName name="org.springframework.context.ConfigurableApplicationContext"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.annotation.RepoInterface"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.annotation_xml.RepoOneInterface"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.annotation_xml.RepoTwoInterface"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="javax.inject.Named"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.javaAnnotation.RepoService"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.javaAnnotation.SpringJavaConf"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.annotation.RentalService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.hello.HelloWorldService"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.hello.HelloWorldServiceImpl"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.hello.Configuration"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.hello.MessageManager"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.ApplicationException"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.xmlBased.SchoolRepo"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.xmlBased.SchoolService"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.xmlBased.StudentRepo"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.xmlBased.StudentEntity"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.xmlBasedTwo.Student.ClassName"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.xmlBasedTwo.Student"/>
+<fullyQualifiedTypeName name="com.aricionur.spring.xmlBasedTwo.StudentDetails"/>
+</qualifiedTypeNameHistroy>

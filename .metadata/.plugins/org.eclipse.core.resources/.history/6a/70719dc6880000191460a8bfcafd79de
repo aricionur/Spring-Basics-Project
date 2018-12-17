@@ -1,0 +1,13 @@
+package com.aricionur.spring.javaAnnotation;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Main {
+
+	public Main() {
+	
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringJavaConf.class);
+		
+	
+	}
+}

@@ -1,0 +1,11 @@
+package com.aricionur.spring.annotation;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class RepoOne {
+
+	public void do(){
+		System.out.println("doing repo One");
+	}
+}

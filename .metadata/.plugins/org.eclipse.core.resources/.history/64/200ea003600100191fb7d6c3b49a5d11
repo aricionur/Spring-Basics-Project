@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+				http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="schoolService"
+		class="com.aricionur.spring.xmlBased.SchoolServiceImpl">
+		<constructor-arg ref="schoolRepo" />
+		<constructor-arg ref="studentRepo" />
+		<property name="studentRepoTwo" ref="studentRepoTwo" />
+
+		<property name="studentList">
+			<list>
+				<ref bean="StudentOne" />
+				<ref bean="StudentTwo" />
+			</list>
+		</property>
+
+		<property name="StudentMap">
+			<map>
+				<entry key="studentThreeKey">
+					<ref bean="studentThree" />
+				</entry>
+				<entry key="studentFourKey">
+					<ref bean="studentFour" />
+				</entry>
+			</map>
+		</property>
+
+	</bean>
+
+	<bean id="schoolRepo"
+		class="com.aricionur.spring.xmlBased.SchoolRepoImpl" />
+
+	<bean id="studentRepo"
+		class="com.aricionur.spring.xmlBased.StudentRepoImpl" />
+	
+	<bean id="studentRepoTwo"
+		class="com.aricionur.spring.xmlBased.StudentRepoImplTwo" />
+
+	<bean id="StudentOne" class="com.aricionur.spring.xmlBased.StudentEntity">
+		<constructor-arg name="name" value="nameOfStudentOne" />
+		<constructor-arg name="surname" value="surnameOfStudentOne" />
+	</bean>
+	
+	<bean id="StudentTwo" class="com.aricionur.spring.xmlBased.StudentEntity">
+		<constructor-arg name="nameeee" value="nameOfStudentTwo" />
+		<constructor-arg name="surname" value="surnameOfStudentTwo" />
+	</bean>
+	
+	<bean id="studentThree" class="com.aricionur.spring.xmlBased.StudentEntity">
+		<constructor-arg name="name" value="nameOfStudentThree" />
+		<constructor-arg name="surname" value="surnameOfStudentThree" />
+	</bean>
+	
+	<bean id="studentFour" class="com.aricionur.spring.xmlBased.StudentEntity">
+		<constructor-arg name="name" value="nameOfStudentFour" />
+		<constructor-arg name="surname" value="surnameOfStudentFour" />
+	</bean>
+	
+</beans>

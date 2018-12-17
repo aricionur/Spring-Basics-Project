@@ -1,0 +1,5 @@
+package com.aricionur.spring.xmlBasedTwo;
+
+public class StudentDetails {
+
+}

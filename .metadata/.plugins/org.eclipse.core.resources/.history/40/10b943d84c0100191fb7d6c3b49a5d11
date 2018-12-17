@@ -1,0 +1,12 @@
+package com.aricionur.spring.xmlBased;
+
+import org.springframework.context.ApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("Configuration.xml");
+		org.springframework.context.ApplicationContext.class
+	}
+}

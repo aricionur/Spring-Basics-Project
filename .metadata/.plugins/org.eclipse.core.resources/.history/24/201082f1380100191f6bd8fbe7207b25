@@ -1,0 +1,6 @@
+package com.aricionur.spring.xmlBased;
+
+public class SchoolServiceImpl implements SchoolService{
+
+	
+}

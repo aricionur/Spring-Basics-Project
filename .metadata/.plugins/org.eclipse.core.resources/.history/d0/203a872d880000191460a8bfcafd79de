@@ -1,0 +1,29 @@
+package com.aricionur.spring.javaAnnotation;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SpringJavaConf {
+
+	public SpringJavaConf() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Bean
+	public RepoOne createRepoOneBean() {
+		return new RepoOne();
+	}
+	
+	@Bean
+	public RepoTwo createRepoTwoBean() {
+		return new RepoTwo();
+	}
+	
+	@Bean
+	public RepoService RepoService() {
+		RepoService repoService = new RepoService();
+		repoService.setRepoOne(createRepoOneBean());
+		repoService.setRepoTwo(createRepoTwoBean());
+	}
+}

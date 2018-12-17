@@ -1,0 +1,10 @@
+package com.aricionur.spring.xml;
+
+public class RentalRepositoryImpl implements RentalRepository{
+
+	@Override
+	public void doSomethingRentalRepository() {
+		System.out.println("this is RentalRepo !!");
+	}
+
+}

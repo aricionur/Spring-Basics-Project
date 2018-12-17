@@ -1,0 +1,8 @@
+package com.aricionur.spring.hello;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MessageManager {
+
+}

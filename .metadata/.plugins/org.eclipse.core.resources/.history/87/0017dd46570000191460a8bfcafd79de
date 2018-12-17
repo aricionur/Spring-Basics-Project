@@ -1,0 +1,11 @@
+package com.aricionur.spring.annotation;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class RepoFour implements RepoInterface {
+
+	public void doThing() {
+		System.out.println("do repo four");
+	}
+}

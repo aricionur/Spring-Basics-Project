@@ -1,0 +1,27 @@
+package com.aricionur.spring.javaAnnotation;
+
+public class RepoService {
+
+	RepoOne repoOne;
+	RepoTwo repoTwo;
+	
+	public RepoService() {
+	}
+	
+	public void setRepoOne(RepoOne repoOne) {
+		this.repoOne = repoOne;
+	}
+	
+	public void setRepoTwo(RepoTwo repoTwo) {
+		this.repoTwo = repoTwo;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

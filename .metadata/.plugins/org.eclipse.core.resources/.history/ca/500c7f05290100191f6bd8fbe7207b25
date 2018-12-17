@@ -1,0 +1,6 @@
+package com.aricionur.spring.hello;
+
+
+public class HelloWorldServiceImpl implements HelloWorldSrivce{
+
+}

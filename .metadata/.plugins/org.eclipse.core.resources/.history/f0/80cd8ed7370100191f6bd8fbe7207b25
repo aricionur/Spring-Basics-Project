@@ -1,0 +1,9 @@
+package com.aricionur.spring.xmlBased;
+
+public class StudentRepoImpl {
+
+	public void doRunnnig() {
+		// TODO Auto-generated method stub
+
+	}
+}

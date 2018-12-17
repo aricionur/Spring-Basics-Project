@@ -1,0 +1,8 @@
+package com.aricionur.spring.javaAnnotation;
+
+import javax.inject.Named;
+
+@Named
+public class RepoOne {
+
+}

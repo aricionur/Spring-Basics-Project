@@ -1,0 +1,6 @@
+package com.aricionur.spring.javaAnnotation;
+
+@Named
+public class RepoOne {
+
+}

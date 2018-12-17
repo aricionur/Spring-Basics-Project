@@ -1,0 +1,17 @@
+package com.aricionur.spring.annotation_xml;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class RepoService {
+
+	@Autowired
+	RepoOneInterface repoOne;
+	
+	@Autowired
+	RepoTwoInterface repoTwo;
+	
+	public void runRepoService() {
+		repoOne.run();
+		repoTwo.run();
+	}
+}

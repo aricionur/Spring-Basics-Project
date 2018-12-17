@@ -1,0 +1,7 @@
+package com.aricionur.spring.xmlBased;
+
+public class StudentEntity {
+
+	String name;
+	String surname;
+}

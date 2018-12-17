@@ -1,0 +1,6 @@
+package com.aricionur.spring.xml;
+
+public interface CustomerRepository {
+
+	public void doSomethingCustomerRepository();
+}

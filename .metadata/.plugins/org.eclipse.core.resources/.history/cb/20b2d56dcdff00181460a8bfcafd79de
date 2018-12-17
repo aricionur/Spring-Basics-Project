@@ -1,0 +1,11 @@
+package com.aricionur.spring.xml;
+
+public class CustomerRepositoryImpl implements CustomerRepository {
+
+	@Override
+	public void doSomethingCustomerRepository() {
+		System.out.println("this is Customer Repo !!");
+		
+	}
+
+}

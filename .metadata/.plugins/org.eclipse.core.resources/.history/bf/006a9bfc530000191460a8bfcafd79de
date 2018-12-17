@@ -1,0 +1,8 @@
+package com.aricionur.spring.annotation;
+
+@Component
+public class RepoFour {
+private void doThing() {
+	System.out.println("do repo four");
+}
+}

@@ -1,0 +1,19 @@
+package com.aricionur.spring.javaAnnotation;
+
+public class RepoService {
+
+	RepoOne repoOne;
+	RepoTwo repoTwo;
+	
+	public RepoService() {
+	}
+	
+	public void
+	
+	
+	
+	
+	
+	
+	
+}

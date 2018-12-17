@@ -1,0 +1,18 @@
+package com.aricionur.spring.annotation_xml;
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		
+		ConfigurableApplicationContext ctx =
+				new ClassPathXmlApplicationContext("annotation_XML_Context.xml");
+		
+		RentalServiceImpl rentalService = ctx.getBean(RepoService.class);
+		
+		rentalService.doSomethingRentalService();
+	}
+}

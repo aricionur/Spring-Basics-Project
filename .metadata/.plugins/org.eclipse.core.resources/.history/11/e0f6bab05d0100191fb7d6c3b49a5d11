@@ -1,0 +1,49 @@
+package com.aricionur.spring.xmlBased;
+
+import java.util.List;
+import java.util.Map;
+
+public class SchoolServiceImpl implements SchoolService {
+
+	private final SchoolRepo schoolRepo;
+	private final StudentRepo studentRepo;
+	private StudentRepo studentRepoTwo;
+	private List<StudentEntity> studentList;
+	private Map<StudentEntity> studentMap;
+	
+	
+	public SchoolServiceImpl(SchoolRepo schoolRepo, StudentRepo studentRepo) {
+		super();
+		this.schoolRepo = schoolRepo;
+		this.studentRepo = studentRepo;
+}
+	
+	@Override
+	public void doRunning() {
+		System.out.println("SchoolServiceImpl is running..");
+		schoolRepo.doRunning();
+		studentRepo.doRunning();
+		studentRepoTwo.doRunning();
+		for (StudentEntity eachStudent : studentList) {
+			System.out.println("Name:" + eachStudent.getName());
+			System.out.println("Surname: " + eachStudent.getSurname());
+		}
+		
+	}
+	
+	public void setStudentRepoTwo(StudentRepo studentRepoTwo) {
+		this.studentRepoTwo = studentRepoTwo;
+	}
+	public StudentRepo getStudentRepoTwo() {
+		return studentRepoTwo;
+	}
+	public void setStudentList(List<StudentEntity> studentList) {
+		this.studentList = studentList;
+	}
+	public List<StudentEntity> getStudentList() {
+		return studentList;
+	}
+	
+	
+
+}

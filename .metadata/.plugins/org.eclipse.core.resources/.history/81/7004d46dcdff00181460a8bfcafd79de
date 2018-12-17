@@ -1,0 +1,14 @@
+package com.aricionur.spring.xml;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+		RentalService rentalService = (RentalService) ctx.getBean("rentalService");
+		rentalService.doSomethingRentalService();
+	}
+}

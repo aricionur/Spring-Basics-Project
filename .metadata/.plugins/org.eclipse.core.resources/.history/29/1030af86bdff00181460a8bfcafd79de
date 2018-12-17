@@ -1,0 +1,11 @@
+package com.aricionur.springxml;
+
+public class RentalServiceImpl implements RentalService {
+
+	@Override
+	public void doSomethingRentalService() {
+		System.out.println("This is rental service");
+	}
+
+	
+}

@@ -1,0 +1,10 @@
+package com.aricionur.spring.xmlBased;
+
+public class SchoolServiceImpl implements SchoolService {
+
+	@Override
+	public void doRunning() {
+		System.out.println("SchoolServiceImpl is running..");	
+	}
+
+}

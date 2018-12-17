@@ -1,0 +1,9 @@
+package com.aricionur.spring.annotation_xml;
+
+public class RepoOne {
+	
+	public void run() {
+		System.out.println("RepoOne is running..");
+	}
+	
+}

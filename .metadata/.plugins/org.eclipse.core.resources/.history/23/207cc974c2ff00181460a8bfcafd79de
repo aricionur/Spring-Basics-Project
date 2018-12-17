@@ -1,0 +1,19 @@
+package com.aricionur.springxml;
+
+public class RentalServiceImpl implements RentalService {
+
+	private CustomerRepository customRepo;
+	private RentalRepositoryImpl rentalRepo;
+
+	public RentalServiceImpl(CustomerRepository customRepo, RentalRepositoryImpl rentalRepo) {
+		super();
+		this.customRepo = customRepo;
+		this.rentalRepo = rentalRepo;
+	}
+
+	@Override
+	public void doSomethingRentalService() {
+		System.out.println("This is rental service");
+	}
+
+}

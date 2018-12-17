@@ -1,0 +1,7 @@
+package com.aricionur.spring.xml;
+
+public interface RentalRepository {
+
+	public void doSomethingRentalRepository();
+}
+

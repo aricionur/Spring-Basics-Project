@@ -1,0 +1,17 @@
+package com.aricionur.spring.javaAnnotation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.aricionur.spring.annotation.RentalService;
+
+public class Main {
+
+	public Main() {
+	
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringJavaConf.class);
+		RepoService repoService = ctx.getBean(RentalService.class);
+		
+	
+	}
+}

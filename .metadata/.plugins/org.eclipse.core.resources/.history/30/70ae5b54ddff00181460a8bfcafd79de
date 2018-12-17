@@ -1,0 +1,11 @@
+package com.aricionur.spring.annotation;
+
+@Component
+public class RentalRepositoryImpl implements RentalRepository{
+
+	@Override
+	public void doSomethingRentalRepository() {
+		System.out.println("this is RentalRepo !!");
+	}
+
+}

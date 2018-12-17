@@ -1,0 +1,11 @@
+package com.aricionur.spring.javaAnnotation;
+
+public class RepoService {
+
+	public RepoService() {
+	
+	}
+	
+	
+	
+}

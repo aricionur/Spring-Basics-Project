@@ -1,0 +1,26 @@
+package com.aricionur.spring.xmlBased;
+
+public class SchoolServiceImpl implements SchoolService {
+
+	private SchoolRepo schoolRepo;
+	private StudentRepo studentRepo;
+	private StudentRepo studentRepoTwo;
+	
+	
+	public SchoolServiceImpl(SchoolRepo schoolRepo, StudentRepo studentRepo) {
+		super();
+		this.schoolRepo = schoolRepo;
+		this.studentRepo = studentRepo;
+}
+	
+	@Override
+	public void doRunning() {
+		System.out.println("SchoolServiceImpl is running..");
+		schoolRepo.doRunning();
+		studentRepo.doRunning();
+		
+	}
+	
+	
+
+}

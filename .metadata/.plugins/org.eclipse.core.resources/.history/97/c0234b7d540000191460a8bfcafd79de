@@ -1,0 +1,47 @@
+package com.aricionur.spring.annotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class RentalServiceImpl implements RentalService {
+
+	RepoOne repoOne;
+	RepoTwo repoTwo;
+	RepoThree repoThree;
+	RepoFour repoFour;
+	
+	@Autowired
+	public CustomerRepository customRepo;
+
+	@Autowired
+	public RentalRepository rentalRepo;
+
+	
+
+	@Autowired
+	public RentalServiceImpl(RepoOne repoOne, RepoTwo repoTwo) {
+		super();
+		this.repoOne = repoOne;
+		this.repoTwo = repoTwo;
+	}
+	
+	@Autowired
+	public void injectRepoThree(RepoThree repoThree) {
+		this.repoThree = repoThree;
+	}
+	
+	public void injectRepoFour(RepoFour repoFour) {
+		this.repoFour = repoFour;
+	}
+
+	@Override
+	public void doSomethingRentalService() {
+		System.out.println("This is rental service");
+		this.customRepo.doSomethingCustomerRepository();
+		this.rentalRepo.doSomethingRentalRepository();
+		this.repoOne.doThing();
+		this.repoTwo.doThing();
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.aricionur.spring.javaAnnotation;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SpringJavaConf {
+
+	public SpringJavaConf() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public RepoOne createRepoOneBean() {
+		return new RepoOne();
+	}
+	
+	public RepoTwo createRepoTwpBean() {
+		return new RepoTwo();
+	}
+
+}

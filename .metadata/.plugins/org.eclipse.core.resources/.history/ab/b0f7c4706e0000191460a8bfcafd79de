@@ -1,0 +1,14 @@
+package com.aricionur.spring.annotation_xml;
+
+public class RepoService {
+
+	
+	RepoOneInterface repoOne;
+	
+	RepoTwoInterface repoTwo;
+	
+	public void runRepoService() {
+		repoOne.run();
+		repoTwo.run();
+	}
+}
